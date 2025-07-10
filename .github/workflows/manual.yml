@@ -1,19 +1,16 @@
-# This is a basic workflow that is manually triggered
+# Nombre del workflow para tu proyecto de frontend
+name: React CI
 
-name: Manual workflow
-
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
+# Se ejecuta con cada push o pull request a la rama main
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build-and-test:
-    # Se ejecuta en una máquina virtual con Ubuntu
+    # Se ejecuta en una máquina virtual con Ubuntu// en que sistema operativo debe ejecutrase este proyecto 
     runs-on: ubuntu-latest
 
     steps:
